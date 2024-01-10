@@ -1,16 +1,46 @@
 ---
-title: 'Second post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
-heroImage: '/blog-placeholder-4.jpg'
+title: 'Configuring a Mikrotik Device: A Step-by-Step Guide'
+description: 'Configuration of a Mikrotik device '
+pubDate: 'Nov 22 2023'
+heroImage: '/5158PaL8wIL.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+<h1>Configuring a Mikrotik Device: A Step-by-Step Guide</h1>
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Prerequisite are a Mikrotik device, a computer, WinBox installed on the computer.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+1. Accessing Quickset and Setting a Password
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Begin by accessing the Quickset feature on your Mikrotik device. This is typically found in the main menu upon logging into the device's web interface.
+In Quickset, set a robust password for your device. This is crucial for securing your network and preventing unauthorized access. Navigate to the password settings section, enter a strong password, and confirm it.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+![Second1](/Second1.JPG)
+
+
+2. Creating an Access List
+
+The access list is essential for controlling which devices are allowed to connect to your network. To create an access list:
+Navigate to the access list section in the Mikrotik settings.
+Add the MAC addresses of the devices you wish to allow on your network.
+Ensure that the access list is enabled and properly configured to restrict access only to the specified devices.
+
+![Second2](/Second2.JPG)
+
+3. Configuring a PC for Network Access
+
+To configure a specific PC to work with your Mikrotik setup:
+Ensure the PC's network settings are compatible with the Mikrotik device. This might involve setting a static IP address or ensuring the PC is set to obtain an IP address automatically.
+Make sure the PC’s MAC address is added to the access list if such a list is being used.
+
+4. Setting Up a Deny Rule (Blocklist)
+
+Deny rules or blocklists are important for enhancing network security. They help in blocking unwanted traffic or unauthorized access.
+To set up a deny rule, navigate to the firewall settings in your Mikrotik device.
+Create a new rule that specifies the criteria for blocking traffic. This could be based on IP addresses, MAC addresses, ports, or other network parameters.
+Ensure that the rule is activated and placed correctly in the order of firewall rules to be effective.
+
+![Second3](/Second3.JPG)
+
+Note:
+Each of these steps requires careful attention to detail to ensure that your network is secure and functions as intended.
+Always double-check settings before applying them to avoid unintended network interruptions.
